@@ -1,5 +1,10 @@
 # isPointInPoly
-Determine whether a point is inside an arbitrary polygon
+A fast algorithm which can determine whether a point is inside an arbitrary polygon, this method can support convex and non-convex polygon. 
+It costs O(n), n refers to the n-sided shape.
+
+
+
+
 
 Input:
 
