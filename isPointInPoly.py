@@ -40,13 +40,13 @@ def isPointInPoly(point, poly):
                 angle_sum -= angle
         except:
             print(cos)
-    print(angle_sum)
+
     if abs(angle_sum) > 6.283185307:
         return True
     else:
         return False
 
-if __name__ == '__main__':
-    point = (9, 1.1)
-    poly = [1, 1, 1, 10, 10, 10, 5, 5, 10, 1]
-    print(isPointInPoly(point, poly))
+# if __name__ == '__main__':
+#     point = (9, 1.1)
+#     poly = [1, 1, 1, 10, 10, 10, 5, 5, 10, 1]
+#     print(isPointInPoly(point, poly))

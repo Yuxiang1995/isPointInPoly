@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ec40110-908f-40d7-94f1-021da94af054" name="Default Changelist" comment="Fix: Line Ending">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9ec40110-908f-40d7-94f1-021da94af054" name="Default Changelist" comment="Fix: support non-convex">
       <change beforePath="$PROJECT_DIR$/isPointInPoly.py" beforeDir="false" afterPath="$PROJECT_DIR$/isPointInPoly.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627303576669</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix: support non-convex">
+      <created>1627367495847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627367495847</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix: Line Ending" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Line Ending" />
+    <MESSAGE value="Fix: support non-convex" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: support non-convex" />
   </component>
 </project>
