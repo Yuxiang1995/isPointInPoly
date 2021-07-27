@@ -27,21 +27,26 @@ def isPointInPoly(point, poly):
 
     for i in range(len(vector_list)):
         if i == len(vector_list) - 1:
+            cross = np.cross(vector_list[i], vector_list[0])
             cos = np.dot(vector_list[i], vector_list[0]) / (np.linalg.norm(vector_list[i]) * np.linalg.norm(vector_list[0]))
         else:
+            cross = np.cross(vector_list[i], vector_list[i+1])
             cos = np.dot(vector_list[i], vector_list[i+1]) / (np.linalg.norm(vector_list[i]) * np.linalg.norm(vector_list[i+1]))
         try:
             angle = math.acos(cos)
-            angle_sum += angle
+            if cross >= 0:
+                angle_sum += angle
+            else:
+                angle_sum -= angle
         except:
             print(cos)
-
-    if angle_sum > 6.283185307:
+    print(angle_sum)
+    if abs(angle_sum) > 6.283185307:
         return True
     else:
         return False
 
-# if __name__ == '__main__':
-#     point = (5, 7)
-#     poly = [1, 1, 1, 10, 10, 10, 10, 1]
-#     print(isPointInPoly(point, poly))
+if __name__ == '__main__':
+    point = (9, 1.1)
+    poly = [1, 1, 1, 10, 10, 10, 5, 5, 10, 1]
+    print(isPointInPoly(point, poly))
