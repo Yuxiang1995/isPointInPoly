@@ -13,7 +13,11 @@ True: inside
 False: outside
 
 ## Algorithm
-When a point is inside the polygon, the sum of the angles between it and the vertices of the polygon is 2π. On the contrary, the sum of the angles is 0 while the point is outside the polygon. It should be noted that due to the order, the included angle here has positive and negative. Cross product is employed to deal with this problem.
+1)When a point is inside the polygon, the sum of the angles between it and the vertices of the polygon is 2π. As shown in Convex(a) and Non-Convex(a).
+
+2)while the point is outside the polygon, the sum of the angles is 0. As shown in Convex(b) and Non-Convex(b).
+
+3)It should be noted that due to the order, the included angle here has positive and negative. Cross product is employed to deal with this problem.
 
 For example:
 
